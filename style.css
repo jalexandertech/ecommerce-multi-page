@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+html,body {
+    height: 100%;
+}
+
+nav {
+    background: hsl(26, 100%, 55%);
+    padding: 15px 8px 10px 15px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li.logo {
+    flex: .5;
+    font-size: 30px;
+    font-weight: 700;
+    color:  hsl(0, 0%, 100%);
+    
+}
+
+nav ul div.list-items {
+    justify-content: space-around;
+    display: inline-flex;
+    padding: 0 25px;
+}
+
+nav ul div.list-items a {
+    padding: 0 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 0%);
+}
+
+nav div.list-items a:hover {
+    color: hsl(0, 0%, 100%);
+}
+
+
+nav ul .search-bar  {
+    display: flex;
+    width: 300px;
+    height: 100%;
+    background: hsl(0, 0%, 100%);
+    border-radius: 5px;
+}
+
+nav ul .search-bar input {
+    width: 100%;
+    height: 25px;
+    padding: 5px;
+    
+    border-radius: 5px;
+    border: none;
+}
+
+nav ul .search-icon {
+    width: 14px;
+}
+
+nav ul button {
+    background-color: hsl(220, 14%, 75%);
+    border: 1px solid hsl(220, 14%, 75%);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px ;
+}
+
+nav ul .wrap {
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+padding: 0 10px;
+font-size: 10px;
+}
+
+nav .wrap a {
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+}
+
+nav .wrap a:hover {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+nav .cart img {
+    width: 16px;
+}
+main {
+    height: 100%;
+}
+main .product-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .column {
+    display: flex;
+    flex: 50%;
+    height: 100%;    
+}
+
+main .product-images {
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+    padding: 50px 0;
+    
+}
+
+main .img-thumbnail {
+flex-direction: row;
+}
+
+main .thumbnail {
+    width: 88px;
+    height: 88px;
+    margin: 25px;
+    border-radius: 10px;
+}
+main .product-images .img-product{
+    width: 455px;
+    height: 565px;
+    border-radius: 10px;
+    transition: all 1000ms;
+}
+
+.product-images:hover .img-product
+{
+    transform: scale(1.2);
+}
+
+main .product-description {
+    flex-direction: column;
+    padding: 100px 80px;
+}
+
+main .product-description .name {
+    color: hsl(26, 100%, 55%);
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 15px;
+    font-size: 13px;
+    text-shadow: 1px 1px;
+
+}
+
+main .product-description .title {
+    font-size: 44px;
+    font-weight: 700;
+    padding-bottom: 25px;
+}
+
+main .product-description .text {
+    font-weight: 200;
+    padding-bottom: 25px;
+    line-height: 26px;
+    font-size: 16px;
+}
+
+main .product-description .price {
+    font-weight: 700;
+    padding-bottom: 15px;
+    font-size: 28px;
+}
+
+main .price span{
+    width: 51px;
+    height: 27px;
+    background-color:  #FFEEE2;
+    color: hsl(26, 100%, 55%);
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+main .product-description .original-price {
+    font-weight: 700;
+    padding-bottom: 15px;
+    font-size: 14px;
+    color: hsl(220, 14%, 75%);
+    text-decoration: line-through;
+}
+
+main .product-description button {
+   background-color: hsl(26, 100%, 55%);
+   width: 272px;
+   height: 56px;
+   color: hsl(0, 0%, 100%);
+   border-radius: 15px;
+   border: none;
+   cursor: pointer;
+   font-size: 16px;
+   font-weight: 700;
+}
+footer {
+    text-align: center;
+    padding: 15px
+}
